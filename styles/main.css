@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Montserrat:wght@400;800&family=Poppins:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+html{
+    font-size: 1em ;
+    font-family: 'Poppins', sans-serif;
+}
+.view{
+    display: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.contain{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1em;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    margin-right: auto;
+    width: 150px;
+}
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+}
+header button{
+    display: none;
+}
+header ul li{
+    margin-left: 2em;
+    color: rgb(80, 80, 80);
+    text-transform: uppercase;
+}
+.hero-container{
+    background-color: rgb(61, 61, 61);
+    background-image: url("../asset/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg");
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: white;
+    background-blend-mode: overlay;
+}
+.hero{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 5em;
+}
+.hero > * {
+    margin: 0;
+    padding: 0;
+    margin-top: .75em;
+}
+.hero h1{
+    font-size: 2.5em;
+    font-weight: 800;
+}
+.hero p{
+    font-size: 1em;
+    font-weight: 400;
+}
+.hero button{
+    font-size: 1em;
+    padding: .4em .6em;
+    border: 1px solid white;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 3px;
+    background: none;
+}
+.b{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 3em;
+}
+.b img{
+    max-width: 4em;
+    object-fit: contain;
+}
+.b div{
+    text-align: center;
+}
+.b h2{
+    font-size: 1.25em;
+}
+.c{
+    display: flex;
+    margin-top: 5em;
+}
+.c img {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+.c div{
+    text-align: justify;
+    margin: 0 ;
+    margin-right: auto;
+    padding: 0 1em;
+} 
+.c button{
+    font-size: 1.2em;
+    padding: .8em 1.2em;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 3px;
+    background:rgba(7,132,181);
+}
+footer{
+    background-color: #252525;
+    color: #797878;
+    font-family: 'Atkinson Hyperlegible';
+    margin-top: 4em;
+}
+footer h4{
+    color: rgb(200, 200, 200);
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5em;
+    justify-items: stretch;
+}
+.footer-grid img{
+    max-width: 10em;
+    object-fit: contain;
+}
+small{
+    text-align: center;
+    display: block;
+}
+@media screen and (max-width : 800px) {
+    html{
+        font-size: .8em ;
+        font-family: 'Poppins', sans-serif;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1.5em;
+        justify-items: stretch;
+    }
+    
+}
+
+@media screen and (max-width : 600px) {
+    header button{
+        display: block;
+        background: none;
+        font-size: 3em;
+        border: none;
+        color: #797878;
+    }
+    header .desktop {
+        display: none;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .b div{
+        text-align: center;
+        width: 100%;
+    }
+    .c{
+        flex-wrap: wrap;
+    }
+    .c img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+.mobile{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    border-top: .2px solid  #dbdbdb;
+}
+.mobile ul{
+    padding: 0;
+    margin: 0;
+}
+.mobile li{
+    width: 100%;
+    padding: 1em;
+    text-transform: uppercase;
+}
+.mobile li:hover{
+    background-color: #bebebe;
+}

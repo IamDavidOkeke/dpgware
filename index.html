@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dpgware</title>
+    <link rel = 'stylesheet' href="./styles/main.css" />
+</head>
+<body>
+    <header class="contain">
+        <img class="logo" src="./asset/dpgware-hori-small.png" />
+        <nav class="desktop">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Contact us</a></li>
+            </ul>
+        </nav>
+        <button class = 'menu'>&#8801;</button>
+    </header>
+    <nav class="mobile view">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About us</a></li>
+            <li><a>Contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero-container">
+            <div class="hero contain">
+                <h1>Computer Repair and Retail Services</h1>
+                <p>Desktop and Laptop repair services you can trust.</p>
+                <p>We fix all problems</p>
+                <button>CONTACT US</button>
+            </div>
+        </section>
+        <section class="b contain">
+            <div>
+                <img src="./asset/suitcase.png" />
+                <h2>Low Prices</h2>
+                <p></p>
+            </div>
+            <div>
+                <img src="./asset/technician.png" />
+                <h2> 24/7 Support</h2>
+                <p></p>
+            </div>
+            <div>
+                <img src="./asset/graduate.png" />
+                <h2> Qualified Tech</h2>
+                <p></p>
+            </div>
+        </section>
+        <section class="c contain">
+            <img src="./asset/michal-kubalczyk-tdMu8W9NTnY-unsplash.jpg" />
+            <div>
+                <h2> We're up when your computer is down</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </p>
+                <button>+1 346-907-9778 </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <ul class="contain footer-grid">
+                <li>
+                    <img src="./asset/dpgware-grey.png" />
+                </li>
+                <li>
+                    <h4>Adress</h4>
+                    <p>579 Joseph E Lowery Blvd SW Atlanta 30310, United States.</p>
+                </li>
+                <li>
+                    <h4>Email</h4>
+                    <p>support@tesscommunication.com</p>
+                </li>
+                <li>
+                    <h4>Phone</h4>
+                    <p>+1 346-907-9778</p>
+                </li>
+                <li>
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                    <li><a href="/">About us</a></li>
+                    <li><a href="/">Contact us</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Socials</h4>
+                    <ul>
+                        <li><a href=''><span></span>Twitter </a></li>
+                        <li><a href=''><span></span>Instagram</a></li>
+                        <li><a href=''><span></span>Facebook</a></li>
+                    </ul>
+                </li>
+            </ul>
+        <small class="contain">© Copyright Tess Communication 2020. All rights reserved.        </small>
+    </footer>
+    <script>
+        var menu = document.querySelector('.menu')
+        var mobile = document.querySelector('.mobile')
+
+        menu.addEventListener('click', ()=>{
+            mobile.classList.toggle('view')
+        })
+    </script>
+</body>
+</html>
