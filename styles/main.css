@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Montserrat:wght@400;800&family=Poppins:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap');
 *{
     box-sizing: border-box;
-    word-break: break-all;
-    word-wrap: break-word;
 }
 html{
     font-size: 1em ;
-    font-family: 'Poppins', sans-serif;
-}
-.view{
-    display: none;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     padding: 0;
@@ -22,6 +18,8 @@ ul{
 a{
     text-decoration: none;
     color: inherit;
+    display: inline-block;
+    width: 100%;
 }
 .contain{
     max-width: 1080px;
@@ -52,10 +50,10 @@ header ul li{
     text-transform: uppercase;
 }
 .hero-container{
-    background-color: rgb(61, 61, 61);
-    background-image: url("../asset/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg");
+    background-color: rgba(83, 83, 83, 0.1);
+    background-image: url("../asset/tyler-lastovich-d0Sl3AH8Tlg-unsplash\ \(2\).jpg");
     background-attachment:fixed;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-clip: border-box;
     background-repeat: no-repeat;
@@ -91,18 +89,33 @@ header ul li{
     border-radius: 3px;
     background: none;
 }
+.a {
+    background-color: #ececec;
+    text-align: center;
+    margin: 0;
+    padding: 1em ;
+    padding-top: 3em;
+}
+.a h2{
+    margin: 0;
+    text-transform: uppercase;
+}
 .b{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 3em;
+    padding-top: 3em;    
 }
 .b img{
-    max-width: 4em;
-    object-fit: contain;
+    max-width: 100%;
+    height: 80%;
+    object-fit: cover;
+   border-radius: .5em;
+   box-shadow: 1px 1px 5px rgb(43, 42, 42);
 }
 .b div{
-    text-align: center;
+    
+    width: 20%;
 }
 .b h2{
     font-size: 1.25em;
@@ -110,18 +123,30 @@ header ul li{
 .c{
     display: flex;
     margin-top: 5em;
+    justify-content: space-between;
 }
 .c img {
-    max-width: 50%;
-    height: auto;
+    max-width: 10em;
     object-fit: contain;
+    margin-left: auto;
+    margin-right: 2em;
 }
 .c div{
+    max-width: 50%;
     text-align: justify;
-    margin: 0 ;
-    margin-right: auto;
+    margin: 0;
     padding: 0 1em;
 } 
+.c h2{
+    text-align: left;
+} 
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.row-reverse img{
+    margin-left: 2em;
+    margin-right: auto;
+}
 .c button{
     font-size: 1.2em;
     padding: .8em 1.2em;
@@ -131,6 +156,21 @@ header ul li{
     font-weight: bold;
     border-radius: 3px;
     background:rgba(7,132,181);
+}
+.map-section {
+    text-align: center;
+    margin-top: 4em;
+}
+.map-section div{
+    position: relative;
+    padding-bottom: 50%;
+}
+.map-section iframe{
+   height: 100%;
+   width: 100%;
+    left:0;
+   top:0;
+   position: absolute; 
 }
 footer{
     background-color: #252525;
@@ -161,6 +201,12 @@ small{
         font-size: .8em ;
         font-family: 'Poppins', sans-serif;
     }
+    .b div{
+        text-align: center;
+        width: 45%;
+        margin-left: 0;
+        
+    }
     .footer-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -171,7 +217,7 @@ small{
     
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 450px) {
     header button{
         display: block;
         background: none;
@@ -189,14 +235,20 @@ small{
     .b div{
         text-align: center;
         width: 100%;
+        margin-left: 0;
     }
     .c{
         flex-wrap: wrap;
     }
-    .c img {
+    .c div {
         max-width: 100%;
-        height: auto;
-        object-fit: contain;
+    }
+    .c img{
+        margin: 0 auto!important;
+    }
+    .hero-container{
+        background-image: url("../asset/tyler-lastovich-d0Sl3AH8Tlg-unsplash.jpg");
+        background-position:top ;
     }
 }
 .mobile{
@@ -204,6 +256,9 @@ small{
     padding: 0;
     margin: 0;
     border-top: .2px solid  #dbdbdb;
+    height: 0px;
+    overflow: hidden;
+    transition: all .4s linear;
 }
 .mobile ul{
     padding: 0;
@@ -216,4 +271,7 @@ small{
 }
 .mobile li:hover{
     background-color: #bebebe;
+}
+.view{
+    height: 10em;
 }
