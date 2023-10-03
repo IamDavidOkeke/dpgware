@@ -214,6 +214,9 @@ small{
         gap: 1.5em;
         justify-items: stretch;
     }
+    .hero{
+        padding: 1em;
+    }
     
 }
 
