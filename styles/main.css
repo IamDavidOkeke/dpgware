@@ -29,7 +29,7 @@ a{
 .inner-contain{
     max-width: 540px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 3em 1em;
 }
 header{
     display: flex;
@@ -113,11 +113,31 @@ header ul li{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;  
-    margin-top: 5em;
 }
-.c img {
-    max-width: 100%;
-    object-fit: contain;
+.bg1{
+    background-image: url("../asset/niclas-illg-6vA8GCbbtL0-unsplash\ \(1\).jpg");
+}
+.bg2{
+    background-image: url("../asset/walkator-klMii3cR9iI-unsplash.jpg");
+}
+.image-background {
+    width: 100%;
+    background-size:cover;
+    /* background-attachment:fixed; */
+    background-position: center;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+.image-background div{
+    width: 100%;
+    height: 100%;
+}
+.bg1 div{
+
+}
+.bg2 div{
+    
 }
 .c div{
     text-align: justify;
@@ -130,18 +150,11 @@ header ul li{
 .c h5{
     margin-bottom: .6em;
 }
-.c div+div{
-    margin-top: 3em;
-}
 .row-reverse{
     direction: rtl;
 }
 .row-reverse div{
     direction: ltr;
-}
-.blend-top{
-    margin-top: 0;
-    padding-top: 0;
 }
 .c a{
     margin-top: 1em;
@@ -150,12 +163,6 @@ header ul li{
     font-weight: bold;
     border-radius: 1px;
     background:rgb(3, 216, 70);
-}
-.dark {
-   background-color: #1e1e1e;
-   margin-top: 0;
-   color: white;
-   padding-top: 5em;
 }
 .map-section {
     text-align: center;
@@ -237,6 +244,7 @@ small{
     .c{
         display: grid;
         grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
         justify-items: center;  
     }
     /* .c div {
